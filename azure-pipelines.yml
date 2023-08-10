@@ -109,7 +109,7 @@ stages:
           - script: |
               pip install selenium
               pip install pytest
-              pytest tests/functional_tests/ --webAppUrl=https://$(webAppName).azurewebsites.net --junitxml=$(System.DefaultWorkingDirectory)/TestResults/test-results-functional.xml
+              pytest tests/functional_tests/ --webAppUrl=https://python-cicd-6.azurewebsites.net --junitxml=$(System.DefaultWorkingDirectory)/TestResults/test-results-functional.xml
             workingDirectory: $(Pipeline.Workspace)
             displayName: 'Run functional tests'
           
