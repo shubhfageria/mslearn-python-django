@@ -95,8 +95,9 @@ stages:
 
           - task: UsePythonVersion@0
             inputs:
-              versionSpec: '$(pythonVersion)'
-            displayName: 'Use Python version'
+              versionSpec: '3.9'
+              addToPath: true
+            displayName: 'Use Python version 3.9'
 
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : python-cicd-6'
